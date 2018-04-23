@@ -1,7 +1,7 @@
 const express = require('express');
 
 const application = express();
-const port = process.env.port;
+const port = process.env.PORT;
 
 application.all('*', (request, response, next) =>{
    console.log(request.url);
