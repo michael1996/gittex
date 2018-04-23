@@ -1,7 +1,7 @@
 const express = require('express');
 
 const application = express();
-const port = 8080;
+const port = process.env.port;
 
 application.all('*', (request, response, next) =>{
    console.log(request.url);
